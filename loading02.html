@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>loading2</title>
+    <style>
+        .display{
+            position: relative;
+            margin-left: 100px;
+        }
+        .line{
+            width: 2px;
+            height: 5px;
+            border: 1px solid #f00;
+            background-color: #f00;
+            animation: loading .5s infinite;
+        }
+        @keyframes loading {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: .3;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .line2{
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            transform: rotate(40deg);
+            animation-delay: .1s;
+        }
+        .line3{
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            transform: rotate(120deg);
+            animation-delay: .2s;
+        }
+        .line4{
+            margin-top: 14px;
+            animation-delay: .3s;
+        }
+        .line5{
+            position: absolute;
+            left: -10px;
+            top: 15px;
+            transform: rotate(40deg);
+            animation-delay: .4s;
+        }
+        .line6{
+            position: absolute;
+            left: -10px;
+            top: 5px;
+            transform: rotate(120deg);
+            animation-delay: .5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="display">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4"></div>
+        <div class="line line5"></div>
+        <div class="line line6"></div>
+    </div>
+</body>
+</html>
